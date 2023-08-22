@@ -109,7 +109,6 @@ iframe {
 }
 
 .about img{
-	pointer-events: none;
 }
 
 .gallery img{
@@ -135,6 +134,19 @@ iframe {
 	background-size: cover;
 	padding: 5rem!important;
 }
+
+.social-icon{
+	width: 65px;
+	padding: 10px;
+	transition: .5s;
+
+}
+
+.social-icon:hover{
+	filter: brightness(.5);
+	transform: translateY(-10px);
+}
+
 
 video {
 	object-fit: cover;
@@ -194,6 +206,14 @@ h1{
 	font-size: 3em;
 	font-weight: 800;
 	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
 }
 
 p{
@@ -215,7 +235,7 @@ p{
 
 .btn:hover{
 	background-color: #C7890D;
-	transform: translateY(-2px);
+	transform: translateY(-10px);
 }
 
 .btn2{
@@ -230,7 +250,7 @@ p{
 
 .btn2:hover{
 	background-color: #C7890D;
-	transform: translateY(-2px);
+	transform: translateY(-10px);
 	color: #EEEEEE;
 }
 
@@ -268,6 +288,7 @@ p{
 }
 
 
+
 #topBtn {
 	position: fixed; /* Fixed/sticky position */
 	bottom: 60px; /* Place the button at the bottom of the page */
@@ -297,9 +318,6 @@ p{
 	text-align: center;
 }
 
-.social-icon:hover{
-	opacity: .8;
-}
 
 .img-footer{
 	height: 150px;
@@ -324,7 +342,7 @@ p{
 }
 
 .logo-proyecto:hover{
-	transform: translateY(-5px);
+	transform: translateY(-10px);
 }
 
 .nav-logo{
@@ -389,6 +407,23 @@ p{
 	border: solid;
 	border-color: #FFFFFF;
 	border-width: thin;
+}
+
+.header{
+	background-image: url("../img/convista/bg.png");
+	background-size: cover;
+	height: 33vh;
+	background-position: center;
+	color: #FFFFFF;
+}
+
+.header h1{
+	color: #FFFFFF;
+}
+
+#Contacto .icon-size{
+	font-weight: bold;
+	font-size: x-large;
 }
 
 
@@ -460,6 +495,10 @@ p{
 
 	.nav-logo{
 		height: 45px;
+	}
+
+	#Contacto{
+		text-align: center;
 	}
 
 }
