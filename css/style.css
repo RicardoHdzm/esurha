@@ -458,6 +458,10 @@ p{
 		display: none;
 	}
 
+	.nav-logo{
+		height: 45px;
+	}
+
 }
 
 .deptx b{
