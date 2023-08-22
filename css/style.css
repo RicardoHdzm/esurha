@@ -1,0 +1,490 @@
+html, body{
+	background-color: #EEEEEE;
+	color: #172640;
+	font-family: 'Montserrat', sans-serif;	font-weight: 400;
+	scroll-behavior: smooth;
+	overflow-x: hidden!important;
+}
+
+div{
+	margin: 0!important;
+	padding: 0!important;
+}
+
+
+.navbar{
+	background-color: #EEEEEE;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.logo-home{
+	width: 400px;
+}
+
+.navbar-brand h1{
+	font-size: medium;
+	font-weight: 700;
+	color: #172640;
+	letter-spacing: 5px;
+}
+
+.navbar-nav a{
+	color:#172640;
+	font-weight: 800;
+	font-size: small;
+	transition: .5s!important;
+	letter-spacing: 2px;
+}
+
+.navbar-nav>a:hover{
+	color: #C7890D!important;
+}
+
+
+.about{
+	height: fit-content;
+	background-color: #EEEEEE;
+}
+
+.item{
+	padding-left: 5px!important;
+}
+
+.dept{
+	background-color: #FFFFFF!important;
+}
+
+.mid-pad{
+	text-align: center;
+	padding-left: 20%!important;
+	padding-right: 20%!important;
+}
+
+
+.about-text{
+	padding: 10rem!important;
+
+}
+
+.empleo{
+	height: fit-content;
+}
+
+.esurha img{
+	filter: brightness(0) invert(1);
+}
+
+.convista img{
+	filter: invert(1);
+}
+
+.contact{
+	height: fit-content;
+}
+
+.icon-contact{
+	font-size: x-large;
+	vertical-align:bottom;
+	font-size: bold;
+}
+
+.mapx{
+	height: 500px;
+	width: 100%;
+}
+
+.mapx{
+	line-height: 0;
+}
+
+iframe {
+	max-height: 100%!important;
+}
+
+
+.img-mrg{
+	overflow: hidden!important;
+	display: inline-block!important;
+}
+
+.about img{
+	pointer-events: none;
+}
+
+.gallery img{
+	pointer-events: none!important;
+}
+
+.section-img{
+	width: 100%;
+	position: center;
+}
+
+.sub-text{
+	font-size: 1em;
+	font-weight: bold;
+	color: #C7890D;
+}
+
+.section-mid{
+	height: fit-content;
+	background-color: #172640;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	padding: 5rem!important;
+}
+
+video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 25%;
+	pointer-events: none;
+}
+
+.esurha {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	pointer-events: none;
+}
+
+.esurha h1{
+	z-index: 1;
+	padding: 2rem;
+	font-size: 10em;
+	color: #172640;
+}
+
+.section-mid h1{
+	color: #EEEEEE;
+	letter-spacing: 5px;
+}
+
+.footer{
+	color: #EEEEEE;
+	background-color: #172640;
+	height: fit-content;
+	font-size: small;
+	font-weight: 400;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.material-symbols-rounded {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+}
+
+h1{
+	color: #172640;
+	font-size: 3em;
+	font-weight: 800;
+	letter-spacing: 2px;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+.section-mid p{
+	color: #EEEEEE;
+}
+
+.btn{
+	background-color: #172640;
+	border: none;
+	font-size: 1em;
+	font-weight: 600;
+	transition: .5s;
+	padding: 20px;
+}
+
+.btn:hover{
+	background-color: #C7890D;
+	transform: translateY(-2px);
+}
+
+.btn2{
+	background-color: #101725;
+	border: none;
+	font-size: 1em;
+	font-weight: 600;
+	transition: .5s;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.btn2:hover{
+	background-color: #C7890D;
+	transform: translateY(-2px);
+	color: #EEEEEE;
+}
+
+.align-items-center {
+	display: flex; 
+	align-items: center;  /*Aligns vertically center */
+	justify-content: center; /*Aligns horizontally center */
+}
+
+.navicon{
+	height: 80px;
+	transition: .5s;
+	filter: brightness(0) invert(1);
+}
+
+.arrow-size{
+	font-size: 3em;
+	user-select: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.gallery{
+	position: relative;
+	height: fit-content;
+}
+
+.img-gallery{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	z-index: 2;
+}
+
+
+#topBtn {
+	position: fixed; /* Fixed/sticky position */
+	bottom: 60px; /* Place the button at the bottom of the page */
+	right: 40px; /* Place the button 30px from the right */
+	z-index: 90; /* Make sure it does not overlap */
+	outline: none; /* Remove outline */
+	background-color: #172640; /* Set a background color */
+	color: #172640; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	font-weight: bolder;
+	border: solid;
+	border-width: 5px;
+	transition: 0.5s ease;
+	border-radius: 100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+	padding: 10px!important;
+	border-color: #EEEEEE;
+}
+
+#topBtn:hover {
+	background-color: #C7890D;
+	border-color: #EEEEEE;
+	transform: translateY(-10px);
+}
+
+.centering{
+	text-align: center;
+}
+
+.social-icon:hover{
+	opacity: .8;
+}
+
+.img-footer{
+	height: 150px;
+	filter: brightness(0) invert(1);
+}
+
+.navbar-toggler{
+	border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active{
+	border: none!important;
+	outline: none !important;
+	box-shadow: none;
+}
+
+.clientes-logo{
+	width: 180px;
+	transition: .5s;
+	filter: brightness(0) invert(1);
+}
+
+.logo-proyecto{
+	height: 100px;
+	transition: .5s;
+	filter: brightness(0) invert(1);
+}
+
+.clientes-logo:hover{
+	transform: translateY(-5px);
+}
+
+.logo-proyecto:hover{
+	transform: translateY(-5px);
+}
+
+.nav-logo{
+	height: 65px;
+}
+
+
+.cv-btn{
+	width: 100%;
+}
+
+.iconx{
+	width: 60px;
+}
+
+.footer p{
+	font-size: small;
+	font-weight: 400;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #EEEEEE!important;
+}
+
+.icon-size{
+	vertical-align:bottom;
+	font-size: 22px;
+}
+
+.convista{
+	background-color: black;
+	background-image: url("../img/convista/bg.png");
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.convista-f{
+	background-color: black;
+	background-image: url("../img/convista/cv-ft.png");
+	background-size: cover;
+	height: fit-content;
+	background-position: center;
+	background-attachment: fixed;
+	font-size: small;
+	color: #FFFFFF;
+}
+
+.convista-f .btn{
+	background-color: transparent;
+	color: #FFFFFF;
+	border: solid;
+	border-color: #FFFFFF;
+	border-width: thin;
+}
+
+.convista-f .btn:hover{
+	background-color: #FFFFFF;
+	color: black;
+	border: solid;
+	border-color: #FFFFFF;
+	border-width: thin;
+}
+
+@media only screen and (max-width: 760px){
+
+	.footer{
+		text-align: center;
+	}
+
+	h1{
+		font-size: xx-large;
+	}
+
+	h2{
+		font-size: medium;
+	}
+
+	p{
+		font-size: medium;
+	}
+
+	.navbar-brand h1{
+		font-size: x-small;
+		font-weight: 800;
+	}
+
+
+	.sub-text{
+		font-size: small;
+	}
+
+	.btn{
+		font-size: small;
+	}
+
+	.btn2{
+		font-size: small;
+	}
+
+	.section-mid{
+		padding-left: 0rem!important;
+		padding-right: 0rem!important;
+
+	}
+
+	.logo-home{
+		width: 80%;
+	}
+
+	.clientes-logo{
+		width: 148px;
+	}
+
+	.logo-proyecto{
+		height: 80px;
+	}
+
+	.about li{
+		font-size: small!important;
+	}
+
+	.mb-dlt{
+		display: none;
+	}
+
+}
+
+.deptx b{
+	color: #C7890D;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #F1F1F1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #C1C1C1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #323232;
+}
