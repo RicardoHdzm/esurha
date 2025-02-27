@@ -40,7 +40,7 @@ div{
 }
 
 .about{
-	height: fit-content;
+	height: 100vh;
 	background-color: #EEEEEE;
 }
 
@@ -113,8 +113,7 @@ iframe {
 }
 
 .section-img{
-	width: 100%;
-	position: center;
+  width: 100%!important;
 }
 
 .sub-text{
