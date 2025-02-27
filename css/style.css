@@ -75,6 +75,10 @@ div{
 }
 
 
+.logo-esurha{
+	height: 30rem;
+}
+
 .logo-home{
 	height: 20rem;
 }
@@ -424,6 +428,11 @@ label{
 
 	.logo-home{
 		width: 20rem;
+		height: auto;
+	}
+
+	.logo-esurha{
+		width: 25rem;
 		height: auto;
 	}
 
