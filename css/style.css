@@ -13,34 +13,31 @@ div{
 
 .navbar{
 	background-color: #EEEEEE;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
-	background-attachment: fixed;
-	background-position: center;
+	font-size: .5rem;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	filter: drop-shadow(0 0 0.25rem #000);
+
 }
+
+.nav-logo{
+	width: 12rem;
+	height: auto;
+}
+
+
+.navbar a{
+	color: #172640;
+}
+
+.navbar a:hover{
+	color: #C7890D;
+}
+
 
 .logo-home{
 	width: 400px;
 }
-
-.navbar-brand h1{
-	font-size: medium;
-	font-weight: 700;
-	color: #172640;
-	letter-spacing: 5px;
-}
-
-.navbar-nav a{
-	color:#172640!important;
-	font-weight: 800;
-	font-size: small;
-	transition: .5s!important;
-	letter-spacing: 2px;
-}
-
-.navbar-nav>a:hover{
-	color: #C7890D!important;
-}
-
 
 .about{
 	height: fit-content;
@@ -155,7 +152,7 @@ video {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	opacity: 25%;
+	opacity: 75%;
 	pointer-events: none;
 }
 
@@ -167,7 +164,7 @@ video {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: black;
+	background-color: #000;
 	pointer-events: none;
 }
 
@@ -324,14 +321,20 @@ p{
 	filter: brightness(0) invert(1);
 }
 
-.navbar-toggler{
-	border: none;
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(23,38,64,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-toggler:focus, .navbar-toggler:active{
-	border: none!important;
-	outline: none !important;
+.custom-toggler.navbar-toggler {
+	border-color: transparent;
+	margin-right: 10px;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler:hover {
 	box-shadow: none;
+	outline: 0;
 }
 
 
@@ -343,10 +346,6 @@ p{
 
 .logo-proyecto:hover{
 	transform: translateY(-10px);
-}
-
-.nav-logo{
-	height: 65px;
 }
 
 
@@ -493,10 +492,6 @@ p{
 		display: none;
 	}
 
-	.nav-logo{
-		height: 45px;
-	}
-
 	#Contacto{
 		text-align: center;
 	}
@@ -519,10 +514,10 @@ p{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #C1C1C1;
+	background: #172640;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #323232;
+	background: #121e33;
 }
