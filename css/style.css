@@ -31,7 +31,7 @@ div{
 }
 
 .navbar a:hover{
-	color: #C7890D;
+	color: #365895;
 }
 
 
@@ -120,7 +120,7 @@ iframe {
 .sub-text{
 	font-size: 1em;
 	font-weight: bold;
-	color: #C7890D;
+	color: #365895;
 }
 
 .section-mid{
@@ -231,7 +231,7 @@ p{
 }
 
 .btn:hover{
-	background-color: #C7890D;
+	background-color: #365895;
 	transform: translateY(-10px);
 }
 
@@ -246,7 +246,7 @@ p{
 }
 
 .btn2:hover{
-	background-color: #C7890D;
+	background-color: #365895;
 	transform: translateY(-10px);
 	color: #EEEEEE;
 }
@@ -306,7 +306,7 @@ p{
 }
 
 #topBtn:hover {
-	background-color: #C7890D;
+	background-color: #365895;
 	border-color: #EEEEEE;
 	transform: translateY(-10px);
 }
@@ -317,8 +317,18 @@ p{
 
 
 .img-footer{
-	height: 150px;
+	height: 12rem;
 	filter: brightness(0) invert(1);
+}
+
+.footer a{
+	padding: 2rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: yellow;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -351,16 +361,6 @@ p{
 
 .cv-btn{
 	width: 100%;
-}
-
-.footer p{
-	font-size: small;
-	font-weight: 400;
-}
-
-.footer a{
-	text-decoration: none;
-	color: #EEEEEE!important;
 }
 
 .icon-size{
@@ -495,7 +495,7 @@ p{
 }
 
 .deptx b{
-	color: #C7890D;
+	color: #365895;
 }
 
 /* width */
@@ -525,7 +525,7 @@ p{
   right: 2.5rem;
   z-index: 90;
   outline: none; 
-  background-color: #304347; 
+  background-color: #172640; 
   cursor: pointer;
   font-weight: bolder;
   border-color: #fff!important;
@@ -541,7 +541,7 @@ p{
 }
 
 #wappBtn:hover {
-	background-color: #1e3033;
+	background-color: #365895;
 	transform: translateY(-.5rem);
 }
 
