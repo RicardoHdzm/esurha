@@ -20,6 +20,11 @@ div{
 	margin: 0!important;
 }
 
+::selection {
+  color: #172640;
+  background: #c6981e;
+}
+
 .navbar{
 	background-color: #EEEEEE;
 	font-size: .5rem;
@@ -151,7 +156,7 @@ video {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	opacity: 75%;
+	opacity: 50%;
 	pointer-events: none;
 }
 
