@@ -7,12 +7,12 @@ html, body{
 }
 
 section {
-  margin: 0!important;
-  padding: 0!important;
+	margin: 0!important;
+	padding: 0!important;
 }
 
 section {
-  scroll-margin-top: 110px; /* Ajuste de desplazamiento para el navbar */
+	scroll-margin-top: 110px; /* Ajuste de desplazamiento para el navbar */
 }
 
 
@@ -21,8 +21,8 @@ div{
 }
 
 ::selection {
-  color: #172640;
-  background: #c6981e;
+	color: #172640;
+	background: #c6981e;
 }
 
 .navbar{
@@ -464,6 +464,11 @@ label{
 
 	.btn, .btn2{
 		font-size: 0.8rem;
+	}
+
+	.convista{
+		background-size: cover;
+		background-attachment: scroll;
 	}
 }
 
