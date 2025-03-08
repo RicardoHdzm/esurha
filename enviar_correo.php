@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
     // Dirección de correo a la que se enviará el mensaje
-    $para = "jrhm95@gmail.com";  // Reemplaza con tu dirección de correo
+    $para = "c.velazquez@esurha.com";  // Reemplaza con tu dirección de correo
 
     // Asunto del correo
     $asunto = "Mensaje: $asunto";
@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviamos el correo
     if (mail($para, $asunto, $cuerpo, $headers)) {
-        echo "¡Correo enviado con éxito!";
+        echo "¡Mensaje enviado con éxito!";
     } else {
-        echo "Hubo un error al enviar el correo.";
+        echo "Hubo un error al enviar el mensajeo. Intentalo de nuevo.";
     }
 } else {
     echo "Acceso no permitido.";
