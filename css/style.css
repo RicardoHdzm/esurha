@@ -238,6 +238,11 @@ p{
 	color: #fff;
 }
 
+button:focus{
+	outline: none;
+	box-shadow: none!important;
+}
+
 .form-control{
 	border-radius: 0;
 }
@@ -521,17 +526,17 @@ label{
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #fff;
+	background: #101b2d;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #101b2d;
+	background: #eee;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #101b2d;
+	background: #fff;
 }
 
 
