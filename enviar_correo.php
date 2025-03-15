@@ -1,31 +1,50 @@
 <?php
+// Habilitar la visualización de errores para depuración
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Verificar si la solicitud es POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recogemos los datos del formulario
-    $name = htmlspecialchars($_POST['name']); // Para evitar problemas con caracteres especiales
-    $email = htmlspecialchars($_POST['asunto']);
-    $asunto = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $mensaje = htmlspecialchars($_POST['mensaje']);
+    // Obtener los datos del formulario y sanitizarlos
+    $nombre = htmlspecialchars(strip_tags(trim($_POST["name"] ?? '')));
+    $asunto = htmlspecialchars(strip_tags(trim($_POST["asunto"] ?? '')));
+    $email = htmlspecialchars(strip_tags(trim($_POST["email"] ?? '')));
+    $telefono = htmlspecialchars(strip_tags(trim($_POST["phone"] ?? '')));
+    $mensaje = htmlspecialchars(strip_tags(trim($_POST["mensaje"] ?? '')));
 
-    // Dirección de correo a la que se enviará el mensaje
-    $para = "c.velazquez@esurha.com";  // Reemplaza con tu dirección de correo
-
-    // Asunto del correo
-    $asunto = "Mensaje: $asunto";
-
-    // Cuerpo del correo
-    $cuerpo = "Nombre: $nombre\nCorreo electrónico: $email\nTeléfono: \n$phone\nMensaje: \n$mensaje";
-
-    // Cabecera del correo
-    $headers = "From: $email";  // Quién envía el correo
-
-    // Enviamos el correo
-    if (mail($para, $asunto, $cuerpo, $headers)) {
-        echo "¡Mensaje enviado con éxito!";
-    } else {
-        echo "Hubo un error al enviar el mensajeo. Intentalo de nuevo.";
+    // Validar que los campos no estén vacíos
+    if (empty($nombre) || empty($asunto) || empty($email) || empty($telefono) || empty($mensaje)) {
+        header("Location: proyectos.html?status=error");
+        exit();
     }
+
+    // Destinatario (cambia esto por tu correo)
+    $destinatario = "c.velazquez@esurha.com"; // Reemplázalo por tu dirección de correo
+
+    // Construir el mensaje
+    $contenido = "Nombre: $nombre\n";
+    $contenido .= "Correo Electrónico: $email\n";
+    $contenido .= "Teléfono: $telefono\n\n";
+    $contenido .= "Mensaje:\n$mensaje\n";
+
+    // Cabeceras del correo
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+
+    // Enviar el correo
+    $exito = mail($destinatario, $asunto, $contenido, $headers);
+
+    // Redirigir con mensaje de éxito o error
+    if ($exito) {
+        header("Location: mensaje-enviado?status=success");
+    } else {
+        header("Location: mensaje-enviado?status=error");
+    }
+    exit();
 } else {
-    echo "Acceso no permitido.";
+    // Si no es una solicitud POST, redirigir a proyectos.html
+    header("Location: mensaje-enviado");
+    exit();
 }
 ?>
